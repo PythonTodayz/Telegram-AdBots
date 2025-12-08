@@ -97,7 +97,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 <blockquote><i>This bot is for personal use only.</i>
 <i>Contact the admin for access.</i></blockquote>
 
-👨‍💻 <a href="https://t.me/dojutso">Contact Admin</a>
+👨‍💻 <a href="tg://user?id=7756391784">Contact Admin</a>
 """
         try:
             await update.message.reply_photo(
