@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://PythonToday:JXTg6cIx7tAhOJBk@cluster0.obhmjth.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8447170900:AAFlNt_rNbRGlGt005u0Nb4sFCI2lxDzVOM")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8447170900:AAFlNt....")
 
 ENCRYPTION_KEY = os.getenv("ENCRYPTION_KEY", "a7e5f2d8c9b1a0f3e4d2c8b7a6f5e1d3c9a8b7f6e5d4c3b2a1f0e9d8c7b6a5")
 if not ENCRYPTION_KEY:
