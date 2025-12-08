@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGODB_URI = os.getenv("MONGODB_URI", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://PythonToday:JXTg6cIx7tAhOJBk@cluster0.obhmjth.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8447170900:AAFlNt_rNbRGlGt005u0Nb4sFCI2lxDzVOM")
 
-ENCRYPTION_KEY = os.getenv("ENCRYPTION_KEY", "")
+ENCRYPTION_KEY = os.getenv("ENCRYPTION_KEY", "a7e5f2d8c9b1a0f3e4d2c8b7a6f5e1d3c9a8b7f6e5d4c3b2a1f0e9d8c7b6a5")
 if not ENCRYPTION_KEY:
     ENCRYPTION_KEY = secrets.token_urlsafe(32)
     print("WARNING: ENCRYPTION_KEY not set. Generated a random key for this session.")
@@ -27,6 +27,6 @@ START_IMAGE_URL = "https://i.ibb.co/p6mFW8JQ/file-3545.jpg"
 ADMIN_ONLY_MODE = os.getenv("ADMIN_ONLY_MODE", "False").lower() == "true"
 
 AUTO_REPLY_ENABLED = os.getenv("AUTO_REPLY_ENABLED", "False").lower() == "true"
-AUTO_REPLY_TEXT = os.getenv("AUTO_REPLY_TEXT", "Abhi main offline hu. Tum apna text likhdo main jald se jald reply dene ki koshish karunga.")
+AUTO_REPLY_TEXT = os.getenv("AUTO_REPLY_TEXT", "I'm currently unavailable. Go ahead and send your message, I will reply as soon as I can.")
 
 AUTO_GROUP_JOIN_ENABLED = os.getenv("AUTO_GROUP_JOIN_ENABLED", "False").lower() == "true"
