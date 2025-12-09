@@ -31,7 +31,7 @@ def accounts_menu_keyboard():
 
 def support_keyboard():
     keyboard = [
-        [InlineKeyboardButton("👨‍💻 Admin", url="tg://user?id=7756391784")],
+        [InlineKeyboardButton("👨‍💻 Admin", url="https://t.me/dojutso")],
         [InlineKeyboardButton("📖 How to Use", url="https://t.me/dojutso")],
         [InlineKeyboardButton("🔙 Back", callback_data="main_menu")]
     ]
