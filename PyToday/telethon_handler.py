@@ -9,9 +9,8 @@ from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.types import Channel, Chat, InputPeerChannel, InputPeerSelf
 from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError, PhoneCodeExpiredError, PasswordHashInvalidError, UserAlreadyParticipantError, InviteHashExpiredError, InviteHashInvalidError
 from datetime import datetime
-from PyToday import database
-from PyToday.encryption import encrypt_data, decrypt_data
-from PyToday import config
+from PyToday import *
+
 
 logger = logging.getLogger(__name__)
 active_clients = {}

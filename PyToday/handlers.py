@@ -4,21 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
 from telegram.error import BadRequest
 from telegram.constants import ParseMode
-from PyToday import database
-from PyToday.encryption import encrypt_data, decrypt_data
-from PyToday.keyboards import (
-    main_menu_keyboard, otp_keyboard, accounts_keyboard, 
-    groups_keyboard, delete_accounts_keyboard, confirm_delete_keyboard,
-    time_keyboard, back_to_menu_keyboard, account_selection_keyboard,
-    ad_text_menu_keyboard, ad_text_back_keyboard, settings_keyboard,
-    twofa_keyboard, back_to_settings_keyboard, advertising_menu_keyboard,
-    accounts_menu_keyboard, support_keyboard, target_adv_keyboard,
-    selected_groups_keyboard, target_groups_list_keyboard, remove_groups_keyboard,
-    single_account_selection_keyboard, auto_reply_settings_keyboard,
-    back_to_auto_reply_keyboard, force_sub_keyboard, force_sub_join_keyboard
-)
-from PyToday import telethon_handler
-from PyToday import config
+from PyToday import *
 
 logger = logging.getLogger(__name__)
 user_states = {}
@@ -103,6 +89,8 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_photo(
                 photo=config.START_IMAGE_URL,
                 caption=private_text,
+                has_spoiler = True,
+	            message_effect_id=5104841245755180586 #🔥
                 parse_mode="HTML"
             )
         except:
