@@ -1,10 +1,3 @@
-Perfect 👍
-Neeche ONE-PIECE, 100% COPY-PASTE READY README diya hai.
-Bas poora select karo → copy → paste (GitHub / Telegram / Markdown me bilkul sahi chalega).
-
-⸻
-
-
 <div align="center">
 
 <img src="https://i.ibb.co/p6mFW8JQ/file-3545.jpg" width="100%" style="border-radius:15px; box-shadow:0 8px 25px rgba(0,0,0,0.45);" />
